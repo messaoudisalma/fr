@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>atelier6</title>
+	<meta charset="utf-8">
+	<script type="javascript" src="script.js">
+	function requiredElement(){
+	    var str1 = document.forms['Form'].nom.value;
+	    var str2 = document.forms['Form'].nom.value;
+	    var str3 = document.forms['Form'].nom.value;
+	    var str4 = document.forms['Form'].nom.value;
+	    var str5 = document.forms['Form'].nom.value;
+	    var str6 = document.forms['Form'].nom.value;
+	    if(!str1.replace(/\s+/,'').length{
+		    alert("le champ nom est vide!");
+		    document.getElementsById('nom').style.backgroundColor='red';
+		    document.getElementsById('nom').focus();
+		    return false;
+        }
+        if(!str2.replace(/\s+/,'').length{
+		    alert("le champ nom est vide!");
+		    document.getElementsById('prenom').style.backgroundColor='red';
+		    document.getElementsById('prenom').focus();
+		    return false;
+        }
+        if(!str3.replace(/\s+/,'').length{
+		    alert("le champ nom est vide!");
+		    document.getElementsById('email').style.backgroundColor='red';
+		    document.getElementsById('email').focus();
+		    return false;
+        }
+        if(!str4.replace(/\s+/,'').length{
+		    alert("le champ nom est vide!");
+		    document.getElementsById('M1').style.backgroundColor='red';
+		    document.getElementsById('M1').focus();
+		    return false;
+            }
+        if(!str5.replace(/\s+/,'').length{
+		    alert("le champ nom est vide!");
+		    document.getElementsById('¨M2').style.backgroundColor='red'
+		    document.getElementsById('M2').focus();
+		    return false;
+        }
+        if(!str6.replace(/\s+/,'').length{
+		    alert("le champ nom est vide!");
+		    document.getElementsById('M3').style.backgroundColor='red';
+		    document.getElementsById('M3').focus();
+		    return false;
+        }
+
+        
+      }
+      function note1validate(){
+	    var note1 = number;
+	    if {(note1 !="" && note1 == number && (note1>=0 && note1<=20) )
+	      return true;};
+	      alert("message d'erreur");
+	      document.getElementsById('M1').style.backgroundColor='red';
+	    else {return false;};
+        }
+      note1validate();
+      function note2validate(){
+	    var note2 = number;
+	    if {(note2!="" && note2 == number && (note2>=0 && note2<=20) )
+		  return true;};
+	      alert("message d'erreur");
+	      document.getElementsById('M2').style.backgroundColor='red';
+	    else {return false;};
+      }
+      note2validate();
+     function note3validate(){
+	   var note3 = number;
+	   if {(note3!="" && note3 == number && (note3>=0 && note3<=20) )
+		return true;};
+	    alert("message d'erreur");
+	    document.getElementsById('M3').style.backgroundColor='red';
+	   else {return false;};
+     }
+     note3validate();
+	</script>
+</head>
+<body>
+	<form name="Form">
+		Name: <input name="nom" type="text" id="nom" /> </br>
+		prenom: <input name="prenom" type="text" id="prenom" /> </br>
+		adresse email: <input name="email" type="email" id="email"> </br>
+		note M1: <input name="M1" type="text" id="M1" /> </br>
+		note M2: <input name="M2" type="text" id="M2" /> </br>
+		note M3: <input name="M3" type="text" id="M3" /> </br>
+		<button onclick="return requiredElement()" type="submit">Submit</button></br>
+		<button type="reset">annuler</button>
+	</form>
+
+</body>
+</html>
